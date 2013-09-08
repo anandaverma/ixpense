@@ -1,23 +1,21 @@
-ixpense
-=======
+ixpense - simple web based expense management system
+====================================================
+
+http://ixpense.apverma.com
 
 iXpense is built on the idea that expense management can be more intuitive, efficient, easy and useful. And anybody can use it.
 
+Note: This resource has been created by Ananda Prakash Verma (http://www.apverma.com)
 
 Installation Requirements:
 
 iXpense is purely written in Yii PHP framework ver 1.1.8. So it can run on any apache/php/mysql server, which fulfills the below version requirements. But I prefer to use XAMPP server 1.1.7 which contains 
 
 Apache 2.2.21
-
 MySQL 5.5.16
-
 PHP 5.3.8
-
 phpMyAdmin 3.4.5
-
 FileZilla FTP Server 0.9.39
-
 Tomcat 7.0.21 (with mod_proxy_ajp as connector)
 
 
@@ -45,4 +43,4 @@ Instruction for Installation:
 
             ), 
 
-5. Open the web browser and type the relevant URL e.g. http://localhost/ixpense
+Done: Open the web browser and type the relevant URL e.g. http://localhost/ixpense
