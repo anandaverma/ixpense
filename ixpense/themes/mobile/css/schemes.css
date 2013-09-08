@@ -1,0 +1,176 @@
+/*   
+Theme Name: Simple Mobile
+Scheme Name: White-Blue
+*/
+
+/* === MAIN === */
+body {
+  background-color: #E7E7E7;
+  background-image: url( ../images/bg.gif);
+  color: #1A1A1A;
+}
+#wrapper {
+  background-color: #F8F8F8;
+}
+
+/* === LOGO === */
+#logo a:hover {
+  color: #1273BB;
+}
+#logo .title span,
+#logo .title sup {
+  color: #1A1A1A;
+}
+
+/* === NAVIGATION & SEARCH === */
+#navigation .search #s {
+  background-image: url(../images/search-input.png);
+}
+#navigation .search #searchsubmit {
+  background-image: url(../images/search-submit.png);
+}
+
+/* === MENU === */
+#menu ul {
+  list-style-image: url(../images/list-image.png);
+}
+
+/* === TWITTER === */
+#twitter .tweet {
+  background-image: url(../images/balloon.png);
+}
+#twitter .tweet .date {
+  background-image: url(../images/balloon.png);
+}
+#twitter .tweet p {
+  background: #E8E8E8;
+  border-left: 1px solid #DADADA;
+  border-right: 1px solid #DADADA;
+}
+
+/* === FLICKR === */
+#flickr .photo img {
+  border-color: #DADADA;
+}
+
+/* === COMMENTS === */
+#comments .comment {
+  background-image: url(../images/balloon.png);
+}
+#comments .comment .date {
+  background-image: url(../images/balloon.png);
+}
+#comments .comment p {
+  background: #E8E8E8;
+  border-left: 1px solid #DADADA;
+  border-right: 1px solid #DADADA;
+}
+#comments input,
+#comments textarea {
+  color: #1A1A1A;
+}
+#comments input[type="text"] {
+  background-image: url(../images/text-input.png);
+}
+#comments .textarea-wrapper {
+  background-image: url(../images/textarea-input.png);
+}
+#comments textarea {
+  background-color: #E8E8E8;
+}
+
+/* === FOOTER === */
+#footer .copyright {
+  color: #717171;
+}
+
+/* === BUTTON === */
+.button {
+  background-image: url(../images/button.png);
+  color: #515151;
+  text-shadow: 0 1px 0 #DDD;
+}
+a.button:hover {
+  color: #727272;
+}
+.button.disabled {
+  color: #707070;
+}
+.button.left .before,
+.button.right .after,
+.button.normal .before,
+.button.normal .after {
+  background-image: url(../images/button.png);
+}
+.button.left .after {
+  background-image: url(../images/left.png);
+}
+.button.right .before {
+  background-image: url(../images/right.png);
+}
+.button.right.disabled .before {
+  background-image: url(../images/right-disabled.png);
+}
+.button.left.disabled .after {
+  background-image: url(../images/left-disabled.png);
+}
+.button-separator {
+  background-image: url(../images/button.png);
+}
+
+/* === POST === */
+.post .comments {
+  background-image: url(../images/comments-bg.png);
+  color: #515151;
+  text-shadow: 0 1px 0 #DDD;
+}
+.post .comments:hover {
+  color: #727272;
+}
+.post .meta,
+.post .meta a,
+.post .tags,
+.post .tags a {
+  color: #5E5E5E;
+}
+.post .meta a:hover,
+.post .tags a:hover {
+  color: #7F7F7F;
+}
+
+/* === CUSTOM === */
+.hr {
+  background: #DADADA;
+}
+
+/* === STYLES === */
+h1, h2, h3, h4, h5, h6 {
+  color: #1A1A1A;
+}
+a {
+  color: #1273BB;
+}
+a:hover {
+  color: #1A93EC;
+}
+blockquote {
+  background-image: url(../images/quote-begin.png);
+}
+blockquote div.quote-end {
+  background-image: url(../images/quote-end.png);
+}
+table {
+  border-color: #DADADA;
+}
+td, th {
+  border-color: #DADADA;
+}
+
+/* === WP STYLES === */
+.wp-caption {
+  border-color: #DADADA;
+  background-color: #E8E8E8;
+}
+#wp-calendar #today {
+  background: #DADADA;
+}

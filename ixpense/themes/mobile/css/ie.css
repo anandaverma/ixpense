@@ -1,0 +1,24 @@
+/*   
+Theme Name: Simple Mobile
+*/
+
+/* === NAVIGATION & SEARCH === */
+#navigation .search {
+  margin-left: 0;
+  padding: 0 !important;
+}
+#navigation .search #s {
+  margin-top: 1px;
+}
+#navigation .search #searchsubmit {
+  margin-top: 3px;
+}
+
+/* === COMMENTS === */
+#comments .textarea-wrapper {
+  margin-top: 0px;
+}
+#comments textarea {
+  position: relative;
+  left: -13px;
+}

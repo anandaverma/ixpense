@@ -1,0 +1,13 @@
+License 
+
+The project is released under GNU GPL v3. Source Code can be found at http://code.google.com/p/ixpense/
+
+Note: This resource has been created by Ananda Prakash Verma (http://www.apverma.com)
+
+TERMS OF USE:
+
+You may freely download, play, redistribute and use it into your software project/college project or you can extend it without removing credits of the original authors.
+
+If you use/modify the resources in your projects please linkback to the resource page (https://ixpense.apverma.com). (Please don’t link directly to the .zip files, please link to the resource page.)
+
+If you should have any questions please contact me here: http://www.apverma.com, alternatively you can mail me at: apverma[at]apverma.com  

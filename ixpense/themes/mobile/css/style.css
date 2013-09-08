@@ -1,0 +1,591 @@
+/*   
+Theme Name: Simple Mobile
+Theme URI: http://themes.kubasto.com/simplemobile/
+Description: Simple Mobile Wordpress theme designed for mobile devices (especially for iPhone).
+Author: Kuba Sto
+Author URI: http://themes.kubasto.com
+Version: 1.3
+*/
+
+/* === MAIN === */
+html, body {
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background: #F4F4F4 url(images/bg.gif) repeat-y center top;
+  color: #D2D2D2;
+  font-family: "Trebuchet MS", "Arial Rounded", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+#wrapper {
+  background-color: #000;
+  margin: 0 auto;
+  padding: 0 8px;
+  width: 304px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* === LOGO === */
+#logo img {
+  display: block;
+  position: relative;
+  left: -8px;
+}
+
+/* === HEADER === */
+#header {
+  display: block;
+  position: relative;
+  left: -8px;
+  top: 0;
+  width: 320px;
+}
+
+/* === NAVIGATION & SEARCH === */
+#navigation {
+  margin: 15px 0;
+  height: 34px;
+}
+#navigation .search {
+  float: right;
+  padding: 0 2px;
+}
+#navigation input {
+  border: none;
+  vertical-align: top;
+}
+#navigation .search #s {
+  background: transparent url(images/search-input.png) no-repeat;
+  color: #858585;
+  font-family: "Trebuchet MS", "Arial Rounded", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 6px;
+  padding: 0 10px;
+  width: 126px;
+  height: 22px;
+}
+#navigation .search #searchsubmit {
+  background: transparent url(images/search-submit.png) no-repeat;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 19px;
+  height: 19px;
+}
+
+/* === MENU === */
+#menu {
+  display: none;
+  margin: 15px 6px;
+}
+#menu ul {
+  list-style-image: url(images/list-image.png);
+  font-size: 19px;
+  line-height: 30px;
+  margin: 0;
+  padding-left: 16px;
+}
+
+/* === TWITTER === */
+#twitter {
+  position: relative;
+  margin: 20px 12px;
+  padding-top: 18px;
+}
+#twitter .logo {
+  position: absolute;
+  left: -8px;
+  top: 0;
+}
+#twitter .tweet {
+  background: url(images/balloon.png) no-repeat bottom right;
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+}
+#twitter .tweet .date {
+  background: url(images/balloon.png) no-repeat;
+  font-size: 12px;
+  text-align: right;
+  line-height: 20px;
+  padding-right: 6px;
+  height: 27px;
+}
+#twitter .tweet .date a {
+  color: #888;
+}
+#twitter .tweet p {
+  background: #0D0D0D;
+  border-left: 1px solid #4F4F4F;
+  border-right: 1px solid #4F4F4F;
+  margin: 0px;
+  padding: 8px 10px;
+  overflow: hidden;
+}
+
+/* === FLICKR === */
+#flickr {
+  margin: 20px 12px;
+}
+#flickr .logo {
+  display: block;
+  margin-bottom: 14px;
+}
+#flickr .photo {
+  float: left;
+  margin-left: 24px;
+  margin-top: 20px;
+  width: 77px;
+  height: 77px;
+}
+#flickr .photo.top {
+  margin-top: 0;
+}
+#flickr .photo.first {
+  margin-left: 0;
+}
+#flickr .photo img {
+  border: 1px solid #4F4F4F;
+  display: block;
+}
+
+/* === COMMENTS === */
+#comments {
+  margin: 20px 12px;
+}
+#comments .comment {
+  background: url(images/balloon.png) no-repeat bottom right;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  position: relative;
+}
+#comments .comment .avatar {
+  position: absolute;
+  left: 6px;
+  top: -18px;
+}
+#comments .comment .date {
+  background: url(images/balloon.png) no-repeat center bottom;
+  color: #888;
+  font-size: 12px;
+  text-align: right;
+  line-height: 20px;
+  padding: 0 34px 0 46px;
+  height: 27px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#comments .comment .date span {
+  float: left;
+}
+#comments .comment p {
+  background: #0D0D0D;
+  border-left: 1px solid #4F4F4F;
+  border-right: 1px solid #4F4F4F;
+  margin: 0px;
+  padding: 8px 10px;
+  overflow: hidden;
+}
+#comments label {
+  color: #888;
+  font-size: 11px;
+}
+#comments input,
+#comments textarea {
+  color: #262626;
+}
+#comments input[type="text"] {
+  border: none;
+  background: transparent url(images/text-input.png) no-repeat;
+  font-family: "Trebuchet MS", "Arial Rounded", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 3px 0;
+  padding: 0 5px;
+  width: 126px;
+  height: 24px;
+}
+#comments .textarea-wrapper {
+  background: url(images/textarea-input.png) no-repeat;
+  margin: -18px 0 20px 0;
+  padding: 25px 5px 5px;
+  width: 270px; /* 280px - padding */
+  height: 148px; /* 178px - padding */
+  z-index: -1;
+}
+#comments textarea {
+  border: none;
+  background-color: #DBDBDB;
+  font-family: "Trebuchet MS", "Arial Rounded", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  resize: none;
+  width: 270px;
+  height: 149px;
+}
+
+/* === SOCIAL MEDIA === */
+#social-media {
+  list-style: none;
+  margin: 15px 12px;
+  padding: 0;
+  height: 32px;
+}
+#social-media li {
+  float: left;
+  margin-right: 9px;
+}
+#social-media li:first-child {
+  float: right;
+  margin-right: 0;
+}
+
+/* === FOOTER === */
+#footer {
+  font-size: 11px;
+  text-align: center;
+  line-height: 25px;
+  margin: 10px 0;
+}
+#footer .copyright {
+  color: #646E5C;
+  float: left;
+}
+#footer .top {
+  float: right;
+}
+
+/* === BUTTON === */
+.button {
+  background-image: url(images/button.png);
+  color: #262626;
+  font-size: 19px;
+  text-shadow: 0 1px 0 #D8D8D8;
+  line-height: 34px;
+  display: block;
+  position: relative;
+  float: left;
+  padding: 0 10px;
+  height: 34px;
+}
+a.button {
+  cursor: pointer;
+}
+a.button:hover {
+  color: #4D4D4D;
+}
+.button input {
+  vertical-align: middle;
+}
+.button.left {
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.button.right {
+  margin-right: 5px;
+  padding-right: 5px;
+}
+.button.normal {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+.button.middle {
+  font-size: 14px;
+  text-align: center;
+  width: 52px;
+}
+.button.disabled {
+  color: #676767;
+}
+.button.center {
+  margin: 0 auto;
+}
+.button.left .before,
+.button.right .after,
+.button.normal .before,
+.button.normal .after {
+  background: url(images/button.png) no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 34px;
+}
+.button.left .before,
+.button.normal .before {
+  background-position: 0 -34px;
+  left: -5px;
+}
+.button.right .after,
+.button.normal .after {
+  background-position: 0 -68px;
+  right: -5px;
+}
+.button.left .after,
+.button.right .before,
+.button.right.disabled .before,
+.button.left.disabled .after {
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  top: 11px;
+  width: 7px;
+  height: 13px;
+}  
+.button.left .after {
+  background-image: url(images/left.png);
+}
+.button.right .before {
+  background-image: url(images/right.png);
+}
+.button.right.disabled .before {
+  background-image: url(images/right-disabled.png);
+}
+.button.left.disabled .after {
+  background-image: url(images/left-disabled.png);
+}
+.button-separator {
+  background: url(images/button.png) no-repeat 0 -102px;
+  display: block;
+  float: left;
+  width: 3px;
+  height: 34px;
+}
+
+/* === POST === */
+.post {
+  margin: 14px 6px;
+}
+.post .comments {
+  background: url(images/comments-bg.png) no-repeat;
+  color: #262626;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 1px 0 #F7F7F7;
+  line-height: 26px;
+  display: block;
+  float: right;
+  margin: 2px 0 4px 8px;
+  padding-left: 1px;
+  width: 38px;
+  height: 37px;
+  overflow: hidden;
+}
+.post .comments:hover {
+  color: #4D4D4D;
+}
+.post .meta,
+.post .meta a,
+.post .tags,
+.post .tags a {
+  color: #888;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.post .meta a:hover,
+.post .tags a:hover {
+  color: #C7C7C7;
+}
+.post .title {
+  margin: 4px 0;
+}
+
+/* === WIDGET === */
+.widget {
+  margin: 15px 12px;
+}
+
+/* === PAGINATION === */
+.index-pagination {
+  margin: 20px auto;
+  width: 132px;
+  height: 34px;
+}
+.post-pagination {
+  margin: 20px auto;
+  width: 57px;
+  height: 34px;
+}
+.comment-pagination {
+  margin-bottom: 16px;
+}
+.comment-pagination span {
+  float: right;
+}
+
+/* === CUSTOM === */
+.hr {
+  background: #2B3128;
+  clear: both;
+  position: relative;
+  left: -8px;
+  top: 0;
+  width: 320px;
+  height: 1px;
+}
+.hr.bold {
+  height: 3px;
+}  
+.clear {
+  clear: both;
+  height: 0;
+}
+.archive-info {
+  margin: 14px 6px;
+}
+.title {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* === STYLES === */
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF;
+}
+h1 {
+  font-size: 22px;
+  margin: 18px 0 15px;
+}
+h2 {
+  font-size: 18px;
+  margin: 15px 0 12px;
+}
+h3 {
+  font-size: 16px;
+  margin: 12px 0 9px;
+}
+h4 {
+  font-size: 14px;
+  margin: 9px 0 6px;
+}
+h5 {
+  font-size: 12px;
+  margin: 6px 0 3px;
+} 
+h6 {
+  font-size: 11px;
+  margin: 0;
+}
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+  margin-top: 0;
+}
+a {
+  outline: none;
+  color: #61A823;
+  text-decoration: none;
+}
+a:hover {
+  color: #78D02B;
+}
+img {
+  border: none;
+  margin: 0;
+}
+ul, ol {
+  margin-left: 0;
+  padding-left: 32px;
+}
+blockquote {
+  background: transparent url(images/quote-begin.png) left top no-repeat;
+  font-style: italic;
+  margin: 14px 10px;
+  position: relative;
+  overflow: hidden;
+}
+blockquote > * {
+  position: relative;
+  padding: 0 20px;
+  z-index: 1;
+}
+blockquote div.quote-end {
+  background: transparent url(images/quote-end.png) right bottom no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 39px;
+  height: 31px;
+  z-index: 0;
+}
+pre {
+  font-size: 12px;  
+  line-height: 16px;
+  overflow: auto;
+}
+table {
+  border: 2px solid #2B3128;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #2B3128;
+  padding: 2px 8px;
+}
+th {
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+
+/* === WP STYLES === */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignleft {
+  float: left;
+  margin: 6px 8px 6px 0;
+}
+.alignright {
+  float: right;
+  margin: 6px 0 6px 8px;
+}
+.wp-caption {
+  border: 1px solid #4F4F4F;
+  text-align: center;
+  background-color: #0D0D0D;
+  padding-top: 4px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.wp-caption img {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 16px;
+  padding: 0 4px 5px;
+  margin: 0;
+}
+#wp-calendar {
+  border: none;
+}
+#wp-calendar td,
+#wp-calendar th {
+  border: none;
+}
+#wp-calendar tbody td {
+  text-align: center;
+}
+#wp-calendar #today {
+  background: #2B3128;
+}
+#wp-calendar #next {
+  text-align: right;
+}
